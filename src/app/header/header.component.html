@@ -1,0 +1,17 @@
+<div class="header">
+  <div class="header-left">
+    <img src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg" alt="">
+    <div class="header-search">
+      <mat-icon>search</mat-icon>
+      <input type="text" placeholder="Search">
+    </div>
+  </div>
+  <div class="header-right">
+    <header-option [optionIcon]="'home'" [optionTitle]="'home' | titlecase"></header-option>
+    <header-option [optionIcon]="'supervisor_account'" [optionTitle]="'my network' | titlecase"></header-option>
+    <header-option [optionIcon]="'business_center'" [optionTitle]="'jobs' | titlecase"></header-option>
+    <header-option [optionIcon]="'textsms'" [optionTitle]="'messaging' | titlecase"></header-option>
+    <header-option [optionIcon]="'notifications'" [optionTitle]="'notifications' | titlecase"></header-option>
+    <header-option [optionAvatar]="avatar" [optionTitle]="'me' | titlecase"></header-option>
+  </div>
+</div>
