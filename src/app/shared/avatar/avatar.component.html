@@ -1,0 +1,11 @@
+<img
+  *ngIf="source"
+  src="{{source}}"
+  alt="{{alt}}"
+  [ngClass]="{
+  'small':size=='sm'||!size,
+  'medium':size=='md',
+  'large':size=='lg',
+  'circle':shape=='circle'||!shape,
+  'square':shape=='square'}"
+>

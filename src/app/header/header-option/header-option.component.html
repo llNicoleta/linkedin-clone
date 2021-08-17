@@ -1,5 +1,5 @@
 <div class="header-option">
+  <avatar *ngIf="optionAvatar" [source]="optionAvatar" [alt]="'avatar'"></avatar>
   <mat-icon *ngIf="optionIcon" class="header-option-icon">{{optionIcon}}</mat-icon>
-  <img mat-card-avatar *ngIf="optionAvatar" src="{{optionAvatar}}" alt="">
   <h5 class="header-option-title">{{optionTitle}}</h5>
 </div>

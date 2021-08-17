@@ -5,6 +5,7 @@
   margin-right: 1.25rem;
   color: gray;
   cursor: pointer;
+  justify-content: center;
 }
 
 .header-option:hover {
@@ -12,12 +13,8 @@
 }
 
 .header-option-title {
+  padding: 0.1rem 0;
   font-weight: lighter;
   font-size: 0.75rem;
 }
 
-.mat-card-avatar {
-  object-fit: contain;
-  height: 1.5rem;
-  border-radius: 50%;
-}
