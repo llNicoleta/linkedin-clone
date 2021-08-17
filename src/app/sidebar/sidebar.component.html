@@ -1,0 +1,26 @@
+<div class="sidebar">
+  <div class="sidebar-top">
+    <img src="{{backdropUrl}}" alt="">
+    <div class="sidebar-avatar">
+      <avatar [size]="'lg'"></avatar>
+    </div>
+    <h2>Nicoleta Panaghiu</h2>
+    <h4>nicoleta.panaghiu@mail.com</h4>
+  </div>
+  <div class="sidebar-stats">
+    <div class="sidebar-stat">
+      <p>Who viewed your profile</p>
+      <p class="sidebar-stat-number">2,534</p>
+    </div>
+    <div class="sidebar-stat">
+      <p>Views of your post</p>
+      <p class="sidebar-stat-number">1,234</p>
+    </div>
+  </div>
+  <div class="sidebar-bottom">
+    <p>Recent</p>
+    <div *ngFor="let item of hashtags" class="sidebar-recent">
+      <span class="hash">#</span> <p>{{item}}</p>
+    </div>
+  </div>
+</div>
