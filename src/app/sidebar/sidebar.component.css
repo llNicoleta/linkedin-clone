@@ -1,4 +1,4 @@
-.sidebar {
+:host {
   position: sticky;
   flex: 0.2;
   border-radius: 0.6rem;

@@ -11,6 +11,10 @@ import {MatCardModule} from "@angular/material/card";
 import {SidebarComponent} from "./sidebar/sidebar.component";
 import {MatChipsModule} from "@angular/material/chips";
 import { AvatarComponent } from './shared/avatar/avatar.component';
+import { FeedComponent } from './feed/feed.component';
+import {FormsModule} from "@angular/forms";
+import { InputOptionComponent } from './feed/input-option/input-option.component';
+import { PostComponent } from './feed/post/post.component';
 
 @NgModule({
   declarations: [
@@ -18,16 +22,20 @@ import { AvatarComponent } from './shared/avatar/avatar.component';
     HeaderComponent,
     HeaderOptionComponent,
     SidebarComponent,
-    AvatarComponent
+    AvatarComponent,
+    FeedComponent,
+    InputOptionComponent,
+    PostComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatIconModule,
-    MatCardModule,
-    MatChipsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatIconModule,
+        MatCardModule,
+        MatChipsModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
